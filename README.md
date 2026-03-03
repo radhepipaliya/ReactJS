@@ -1,16 +1,90 @@
-# React + Vite
+# My React Learning Journey 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my hands-on practice while learning React.
+I am using this project to explore React fundamentals step by step with small examples and component-based experiments.
 
-Currently, two official plugins are available:
+## What this project includes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Function components
+- Class components
+- Props
+- React Fragments
+- Component organization in folders
+- Basic Vite + React setup
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+src/
+	App.jsx
+	Dummy.jsx
+	main.jsx
+	Components/
+		ClassCompo.jsx
+		FunCompo1.jsx
+		FunCompo2.jsx
+	props/
+	ReactFragements/
+		Fragment1.jsx
+		Fragment2.jsx
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## Purpose
+
+The goal of this repository is learning by doing.
+I will keep adding new concepts and examples as I continue my React journey.
+
+## Progress Log
+
+### Day 1
+- Set up React project with Vite
+- Understood project structure (`src`, `public`, entry files)
+
+### Day 2
+- Practiced function components
+- Created reusable UI parts in `Components/`
+
+### Day 3
+- Practiced class components
+- Compared class components with function components
+
+### Day 4
+- Learned and used props
+- Organized prop-related examples in `props/`
+
+### Day 5
+- Practiced React Fragments
+- Created fragment examples in `ReactFragements/`
+
+> I will keep updating this section as I learn more.
+
+## Notes
+
+- This is a learning project, so code may evolve frequently.
+- Folder and file names are kept simple to focus on React concepts.
