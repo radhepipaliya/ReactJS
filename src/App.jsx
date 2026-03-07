@@ -4,10 +4,14 @@ import FunCompo1 from './Components/FunCompo1'
 import ClassCompo from './Components/ClassCompo'
 import FunCompo2 from './Components/FunCompo2'
 import Parent from './props/Parent'
+import DefaultProps from './props/DefaultProps'
+import CommonCompo from './props/CommonCompo'
+import Home from './props/Home'
+import About from './props/About'
 // rafce - react arrow function component with export default
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
         <h1>App Component</h1>
         {/* <hr />
         <Dummy/>
@@ -15,10 +19,16 @@ const App = () => {
         <FunCompo1/>
         <FunCompo2/>
         <ClassCompo/>2 */}
-      <Parent/>
-    </div>
+      {/* <Parent/> */}
+      {/* <CommonCompo/> */}
+      {/* <Home/>
+      <About/> */}
+
+      
+       
+    </React.Fragment>
 
   )
 }
 
-export default App
+export default App;
