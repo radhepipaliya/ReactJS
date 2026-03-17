@@ -13,6 +13,12 @@ import ChangeEvent from './EventHandling/ChangeEvent'
 import RadioInput from './FormHandling/RadioInput'
 import CheckboxInput from './FormHandling/CheckboxInput'
 import SelectDropDown from './EventHandling/SelectDropDown'
+import Fileupload from './FormHandling/Fileupload'
+import FinalForm from './FormHandling/FinalForm'
+import ParentComponent from './ContextAPIRevision/ParentComponent'
+import ChildComponent from './ContextAPIRevision/ChildComponent'
+import CounterProvider from './ContextAPIRevision/CounterProvider'
+import Counter from './ContextAPIRevision/Counter'
 // rafce - react arrow function component with export default
 const App = () => {
   return (
@@ -54,7 +60,15 @@ const App = () => {
       {/* <ChangeEvent /> */}
         {/* <RadioInput/> */}
         {/* <CheckboxInput/> */}
-        <SelectDropDown/>
+        {/* <SelectDropDown/> */}
+        {/* <Fileupload/> */}
+        {/* <FinalForm/> */}
+        {/* <ParentComponent>
+          <ChildComponent/>
+        </ParentComponent> */}
+        <CounterProvider>
+          <Counter/>
+        </CounterProvider>
     </React.Fragment>
 
   )
