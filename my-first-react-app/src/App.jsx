@@ -1,5 +1,4 @@
 import React from 'react'
-import Dummy from './Dummy'
 import FunCompo1 from './Components/FunCompo1'
 import ClassCompo from './Components/ClassCompo'
 import FunCompo2 from './Components/FunCompo2'
@@ -19,6 +18,9 @@ import ParentComponent from './ContextAPIRevision/ParentComponent'
 import ChildComponent from './ContextAPIRevision/ChildComponent'
 import CounterProvider from './ContextAPIRevision/CounterProvider'
 import Counter from './ContextAPIRevision/Counter'
+import UseEffect1 from './UseEffectHook/UseEffect1'
+import UseEffect2 from './UseEffectHook/UseEffect2'
+import FetchApi from './UseEffectHook/FetchApi'
 // rafce - react arrow function component with export default
 const App = () => {
   return (
@@ -66,11 +68,14 @@ const App = () => {
         {/* <ParentComponent>
           <ChildComponent/>
         </ParentComponent> */}
-        <CounterProvider>
+        {/* <CounterProvider>
           <Counter/>
-        </CounterProvider>
+        </CounterProvider> */}
+        {/* <UseEffect1/> */}
+        {/* <UseEffect2/> */}
+        <FetchApi/>
+        
     </React.Fragment>
-
   )
 }
 
