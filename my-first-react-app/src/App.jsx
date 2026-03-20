@@ -21,6 +21,7 @@ import Counter from './ContextAPIRevision/Counter'
 import UseEffect1 from './UseEffectHook/UseEffect1'
 import UseEffect2 from './UseEffectHook/UseEffect2'
 import FetchApi from './UseEffectHook/FetchApi'
+import FetchApi1 from './UseEffectHook/FetchApi1'
 // rafce - react arrow function component with export default
 const App = () => {
   return (
@@ -73,7 +74,8 @@ const App = () => {
         </CounterProvider> */}
         {/* <UseEffect1/> */}
         {/* <UseEffect2/> */}
-        <FetchApi/>
+        {/* <FetchApi/> */}
+        <FetchApi1/>
         
     </React.Fragment>
   )
