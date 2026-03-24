@@ -6,6 +6,11 @@ import Layout2 from "../routing2/Layout2";
 import UserDashBoard from "../routing2/UserDashBoard";
 import UserProfile from "../routing2/UserProfile";
 import UsersSettings from "../routing2/UsersSettings";
+import DynamicHome from "../DynamicRouting/DynamicHome";
+import DynamicUser from "../DynamicRouting/DynamicUser";
+import DynamicLogin from "../DynamicRouting/DynamicLogin";
+import Register from "../pages/Register";
+import DynamicRegister from "../DynamicRouting/DynamicRegister";
 
 // let myRoutes=createBrowserRouter([
 //     {
@@ -34,21 +39,47 @@ import UsersSettings from "../routing2/UsersSettings";
 
 // export default myRoutes;
 
-export let myRoutes2 = createBrowserRouter([
-    {
-        path:"/dashboard",
-        element:<UserDashBoard/>,
-        children:[
-            {
-                path:"user-profile",
-                element:<UserProfile/>
-            },
-            {
-                path:"users-settings",
-                element:<UsersSettings/>
-            },
-            
+// export let myRoutes2 = createBrowserRouter([
+//     {
+//         path:"/dashboard",
+//         element:<UserDashBoard/>,
+//         children:[
+//             {
+//                 path:"user-profile",
+//                 element:<UserProfile/>
+//             },
+//             {
+//                 path:"users-settings",
+//                 element:<UsersSettings/>
+//             },
 
-        ]
-    }
-])
+//         ]
+//     }
+// ])
+
+let myRoutes3 = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout2 />,
+    children: [
+      {
+        index: true,
+        element: <DynamicHome />,
+      },
+      {
+        path: "/user/:id",
+        element: <DynamicUser />,
+      },
+      {
+        path: "/auth/login",
+        element: <DynamicLogin />,
+      },
+      {
+        path: "/auth/register",
+        element: <DynamicRegister />,
+      },
+    ],
+  },
+]);
+
+export default myRoutes3;

@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
-import { myRoutes2 } from "./routes/routes";
+import myRoutes3 from "./routes/routes";
 import Dashboard from "./NavLinkComponents/Dashboard";
 import Admin from "./NavLinkComponents/Admin";
 import UserProfile from "./NavLinkComponents/UserProfile";
@@ -26,7 +26,7 @@ const App = () => {
 
       {/* <Navbar /> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
@@ -36,10 +36,11 @@ const App = () => {
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
       {/* <RouterProvider router={myRoutes}/> */}
       {/* <RouterProvider router={myRoutes2}/> */}
+      <RouterProvider router={myRoutes3} />
     </div>
   );
 };
